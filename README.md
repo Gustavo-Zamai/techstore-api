@@ -7,7 +7,7 @@
 
 TechStore API is a **RESTful backend service** built with **Java and Spring Boot** that provides endpoints for managing products, categories, and suppliers.
 
-This project was created as part of a learning initiative to practice **backend development, REST architecture, and database integration**.
+This API was created to support the TechStore Desktop System, exposing its data through RESTful service
 
 The API can be used by **desktop, web, or mobile applications**.
 
@@ -24,6 +24,16 @@ The API can be used by **desktop, web, or mobile applications**.
 | Hibernate       | ORM for persistence       |
 | Maven           | Dependency management     |
 | MySQL           | Relational database       |
+
+---
+
+## 🔗 Relationship with the Desktop Application
+
+This API was developed as a backend service for the **TechStore Desktop Application**.
+
+The original system was built as a **Java desktop application**, and this API was created to expose the business data through REST endpoints. This allows the system to evolve into a more scalable architecture where different clients (desktop, web, or mobile) can interact with the same backend.
+
+The API reuses the core data model from the desktop application, adapting it to a RESTful architecture using **Spring Boot** and **Spring Data JPA**.
 
 ---
 
