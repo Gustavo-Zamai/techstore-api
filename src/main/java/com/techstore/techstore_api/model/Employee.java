@@ -8,16 +8,18 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import com.techstore.techstore_api.model.Person;
 
-@Getter
 @Setter
+@Getter
 @Entity
-@Table(name = "category")
-public class Category {
+@Table(name = "employee")
+public class Employee extends Person {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String password;
 
-    private String name;
+    private String role;
+
+    private String access_level;
+
 }

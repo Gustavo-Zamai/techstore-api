@@ -8,34 +8,13 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import com.techstore.techstore_api.model.Person;
+
 @Setter
 @Getter
 @Entity
 @Table(name = "supplier")
-public class Supplier {
+public class Supplier extends Person {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String fullname;
-
-    private String cnpj;
-
-    private String email;
-
-    private String phone;
-
-    private String cep;
-
-    private String address;
-
-    private int houseNumber;
-
-    private String hood;
-
-    private String city;
-
-    private String state;
-
+    private String razao_social;
 }

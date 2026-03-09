@@ -8,16 +8,34 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
-
-@Getter
 @Setter
+@Getter
 @Entity
-@Table(name = "category")
-public class Category {
+@Table(name = "person")
+public class Person {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private String fullname;
+
+    //private String cpf_cnpj;
+
+    private String email;
+
+    private String phone;
+
+    private String cep;
+
+    private String address;
+
+    private int house_number;
+
+    private String hood;
+
+    private String city;
+
+    private String state;
+
 }
